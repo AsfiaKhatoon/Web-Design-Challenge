@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(201, 173, 173)}
+  </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">LATTITUDE</a>
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="comparison.html">Comparision</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Visualisations
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <!-- Container 1 -->
+    <div class="container">
+            <!--<div class="row">-->
+          <div class="row">
+            <div class="col-lg-8 col-sm-12">
+              <h1>Wind Speed</h1>
+              <hr>
+                <img src="Fig4.png" alt="maxtemp" height="400" width="600" align="center">
+                <p>Wind speed appears to slightly increase as we move away from the equator. However, to conclusively describe a pattern, 
+                    we would need to go beyond the range in data to reach cities at closer to the poles. Only then can we have a sample large
+                     to confirm the pattern.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                      <!-- Indicators -->
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                      </ul>
+                    
+                      <!-- The slideshow -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a href="maxtemp.html">
+                          <img src="Fig1.png" alt="maxtemp" class ="img-thumbnail"  >
+                          <div class="centered">Latitude vs Max Temperature
+                          </div>
+                          </a>
+                        
+                      </div>
+                        <div class="carousel-item">
+                          <a href="humidity.html">
+                          <img src="Fig2.png" alt="humidity" class = "img-thumbnail" >
+                          <div class="bottom-left">Latitude vs Humidity
+                          </div>
+                      </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="cloudiness.html">  
+                          <img src="Fig3.png" alt="cloudiness" class = "img-thumbnail" >
+                          <div class="bottom-left">Latitude vs Cloudiness
+                          </div>
+                      </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="windspeed.html"> 
+                          <img src="Fig4.png" alt="windspeed" class = "img-thumbnail" >
+                          <div class="bottom-left">Latitude vs Wind Speed
+                          </div>
+                      </a>
+                        </div>
+                      </div>
+                    
+                      <!-- Left and right controls -->
+                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
